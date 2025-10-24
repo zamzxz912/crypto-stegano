@@ -1,11 +1,9 @@
-import os
-
 def binary():
     b = input("input b: ")
     try:
         d = int(b, 2)
     except ValueError:
-        print("input tidak valid (harus biner).")
+        print("invalid.")
         return
     hd = hex(d)[2:].upper()
     o = oct(d)[2:]
@@ -19,7 +17,7 @@ def octal():
     try:
         d = int(o, 8)
     except ValueError:
-        print("input tidak valid (harus oktal).")
+        print("invalid.")
         return
     b = bin(d)[2:]
     hd = hex(d)[2:].upper()
@@ -33,7 +31,7 @@ def hexadecimal():
     try:
         d = int(hd, 16)
     except ValueError:
-        print("input tidak valid (harus hex).")
+        print("invalid.")
         return
     b = bin(d)[2:]
     o = oct(d)[2:]
