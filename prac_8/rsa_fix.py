@@ -88,9 +88,9 @@ def modular_pow(base, exponent, modulus):
 class RSAFix(QWidget):
     def __init__(self):
         super().__init__()
-        self.p = 17
-        self.q = 11
-        self.e = 7
+        self.p = 29 
+        self.q = 13
+        self.e = 5
         self.n = 0
         self.phi_n = 0
         self.d = 0
